@@ -5,7 +5,7 @@
 [![SRTM](https://img.shields.io/badge/DEM-SRTM-FF6B35?style=flat)](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-shuttle-radar-topography-mission-srtm-1)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 🏔️ Overview
+## Overview
 
 A comprehensive **Google Earth Engine (GEE)** and **Python-based** framework for automated detection and classification of agricultural terraces in mountainous terrain. This study focuses on the **Aglar Basin** in the Garhwal region of Uttarakhand, India, implementing a hybrid methodology that combines high-resolution remote sensing with advanced machine learning techniques.
 
