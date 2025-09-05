@@ -392,19 +392,6 @@ XGBoost,0.8239,0.8287,0.6489,0.9090,0.1222,0.6478,52.1
 - **Temporal Consistency**: Validated across April and October imagery
 - **Cross-validation**: Stratified 5-fold CV with spatial blocking
 
----
-
-## 📚 Methodology Details
-
-### Alternative Approaches Tested
-The following methods were evaluated but not adopted in the final pipeline:
-
-1. **Rule-based Classification**: Slope and curvature thresholds showed poor generalization
-2. **Unsupervised Clustering** (K-means, ISODATA): Spatially incoherent results
-3. **Transfer Learning**: DESS-China dataset incompatible with Himalayan terrain
-4. **27-band Sentinel-2**: Computationally prohibitive in GEE environment
-5. **Deep Learning CNNs**: Limited by training data availability and computational constraints
-
 ### Feature Importance Analysis
 ```python
 # Random Forest feature importance
@@ -418,13 +405,6 @@ feature_importance = {
 }
 ```
 
-## 🤝 Contributing
-
-Contributions welcome! Areas for improvement:
-- **Transfer learning** for other Himalayan basins
-- **Time-series analysis** for terrace abandonment detection
-- **Integration with UAV/drone imagery** for ground validation
-- **Real-time processing** optimization for operational use
 
 ### Development Guidelines
 1. Fork the repository
@@ -439,15 +419,6 @@ Contributions welcome! Areas for improvement:
 
 This project is licensed under the **MIT License** - see [LICENSE](LICENSE) for details.
 
----
-
-## 🆘 Support
-
-- **Issues**: [GitHub Issues](https://github.com/username/terrace-classification/issues)
-- **Documentation**: [Project Wiki](https://github.com/username/terrace-classification/wiki)
-- **Contact**: [email@domain.com](mailto:email@domain.com)
-
----
 
 ## 🙏 Acknowledgments
 
