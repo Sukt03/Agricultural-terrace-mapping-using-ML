@@ -348,70 +348,6 @@ edge_mask = apply_canny_refinement(curvature_data)
 final_terraces = terrace_probability_mask & edge_mask
 ```
 
----
-
-## 📊 Output Products
-
-### Raster Outputs
-- **`terrace_probability_surface.tif`** - Continuous probability values [0-1]
-- **`terrace_binary_mask_p81.tif`** - Binary terrace classification (P81 threshold)
-- **`shadow_residual_analysis.tif`** - Solar azimuth shadow anomalies
-- **`edge_refined_terraces.tif`** - Canny edge-enhanced boundaries
-- **`terrain_features_stack.tif`** - Multi-band terrain derivatives
-
-### Vector Outputs
-- **`terrace_polygons_validated.shp`** - Delineated terrace boundaries
-- **`training_validation_points.shp`** - Ground truth annotations
-
-### Statistical Reports
-```csv
-Model,Accuracy,F1_Score,MCC,ROC_AUC,MSE,Kappa,Training_Time_s
-CatBoost,0.8252,0.8298,0.6513,0.9090,0.1205,0.6504,45.2
-RandomForest,0.8239,0.8278,0.6488,0.9082,0.1217,0.6478,38.7
-XGBoost,0.8239,0.8287,0.6489,0.9090,0.1222,0.6478,52.1
-```
-
----
-
-## 🔬 Technical Specifications
-
-### Study Area
-- **Location**: Aglar Basin, Uttarakhand, India
-- **Area**: ~500 km²
-- **Elevation Range**: 800-3000 m above sea level
-- **Terrain**: Steep Himalayan slopes with traditional agricultural terraces
-
-### Data Processing
-- **Pixel Resolution**: 10 m (harmonized)
-- **Training Samples**: 3.08 million pixels (20.31% terrace, 79.69% non-terrace)
-- **Processing Time**: ~15-20 minutes per model on standard hardware
-- **Memory Requirements**: 8GB RAM minimum for full pipeline
-
-### Quality Metrics
-- **Spatial Accuracy**: <10 m positional error
-- **Temporal Consistency**: Validated across April and October imagery
-- **Cross-validation**: Stratified 5-fold CV with spatial blocking
-
-### Feature Importance Analysis
-```python
-# Random Forest feature importance
-feature_importance = {
-    'NDVI': 0.245,
-    'Slope': 0.198,
-    'TPI': 0.176,
-    'NIR_Entropy': 0.164,
-    'TRI': 0.132,
-    'SAVI': 0.085
-}
-```
-
-
-### Development Guidelines
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/enhancement`)
-3. Follow PEP 8 for Python code
-4. Add unit tests for new functions
-5. Submit pull request with detailed description
 
 ---
 
@@ -419,12 +355,5 @@ feature_importance = {
 
 This project is licensed under the **MIT License** - see [LICENSE](LICENSE) for details.
 
-
-## 🙏 Acknowledgments
-
-- **Indian Space Research Organisation (ISRO)** for LISS-IV data access
-- **USGS Earth Resources Observation and Science (EROS) Center** for SRTM DEM
-- **Google Earth Engine Team** for cloud computing platform
-- **Aglar Basin field teams** for ground validation support
 
 
