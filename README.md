@@ -1,4 +1,4 @@
-# Automated Terrace Classification and Machine Learning Evaluation in the Western Himalayas
+# Automated Terrace Classification and Machine Learning Evaluation
 
 [![Google Earth Engine](https://img.shields.io/badge/Google%20Earth%20Engine-Compatible-4285F4?style=flat&logo=google-earth&logoColor=white)](https://earthengine.google.com/)
 [![LISS-IV](https://img.shields.io/badge/Data-LISS--IV-00A9CE?style=flat)](https://www.isro.gov.in/)
