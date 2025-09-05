@@ -47,6 +47,3 @@ The workflow integrates **LISS-IV multispectral imagery**, **SRTM DEM**, **Rando
 - **Thresholded terrace masks** (`GeoTIFF`).
 - **Sun-aligned terrace anomaly layers** (`GeoTIFF`).
 
----
-
-## Repository Structure
